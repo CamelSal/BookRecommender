@@ -1,6 +1,6 @@
 # Book Recommender
 
-This repository contains the code and documentation for a book recommender system
+This repository contains the code and documentation for a book recommender system part of capstone project for BrainStation
 
 
 ## Overview
@@ -15,12 +15,20 @@ To achieve this, the project leverages the power of machine learning. The book r
 
 ## Dataset
 
-For this project will be working with the data [GoodBooks-10K](https://github.com/zygmuntz/goodbooks-10k) whichcontains four indidual files that will be utilized to build the book recommender system.
+For this project will be working with the data [GoodBooks-10K](https://github.com/zygmuntz/goodbooks-10k) which contains four indidual files that will be utilized to build the book recommender system.
 
 #### books.csv: A dataset with 10,000 unique books from Goodreads.
 
-#### ratings.csv: Contains 5.97 million user ratings for the books.
+| Column     | Type    | Description    |
+|-------------------|-------------------|-------------------|
+| Example Value 1   | Example Value 1  | Example Value 1  |
+| Example Value 2   | Example Value 2  | Example Value 2  |
+| Example Value 3   | Example Value 3  | Example Value 3  |
+| Example Value 4   | Example Value 4  | Example Value 4  |
 
+
+
+#### ratings.csv: Contains 5.97 million user ratings for the books.
 
 #### tags.csv: Includes various user-generated tags that can be associated with books.
 
