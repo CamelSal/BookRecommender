@@ -17,11 +17,11 @@ To achieve this, the project leverages the power of machine learning. The book r
 
 For this project will be working with the data [GoodBooks-10K](https://github.com/zygmuntz/goodbooks-10k) whichcontains four indidual files that will be utilized to build the book recommender system.
 
-#### **books.csv**: A dataset with 10,000 unique books from Goodreads.
+#### books.csv: A dataset with 10,000 unique books from Goodreads.
 
-#### **ratings.csv**: Contains 6.1 million user ratings for the books.
+#### ratings.csv: Contains 5.97 million user ratings for the books.
 
 
-#### **tags.csv**: Includes various user-generated tags that can be associated with books.
+#### tags.csv: Includes various user-generated tags that can be associated with books.
 
-#### **book_tags.csv**: Provides information on how often users have applied specific tags to books.
+#### book_tags.csv: Provides information on how often users have applied specific tags to books.
