@@ -30,6 +30,24 @@ For this project will be working with the data [GoodBooks-10K](https://github.co
 
 #### ratings.csv: Contains 5.97 million user ratings for the books.
 
-#### tags.csv: Includes various user-generated tags that can be associated with books.
+| Column     | Type    | Description    |
+|-------------------|-------------------|-------------------|
+| user_id   | int64  | Unique ID for each user  |
+| book_id	   | int64  | Unique ID for each book |
+| rating   | int64  | Rating from 1 to 5  |
+
 
 #### book_tags.csv: Provides information on how often users have applied specific tags to books.
+
+| Column     | Type    | Description    |
+|-------------------|-------------------|-------------------|
+| goodreads_book_id  | int64  | Unique ID for each book from the GoodReads Website |
+| tag_id  | int64 | Unique ID for each tag  |
+| count   | int64  | The number of users that have assigned the tag  |
+
+#### tags.csv: Includes various user-generated tags that can be associated with books.
+
+| Column     | Type    | Description    |
+|-------------------|-------------------|-------------------|
+| tag_id   | int64  | Unique ID for each tag   |
+| tag_name  | object  | Name of the tag  |
