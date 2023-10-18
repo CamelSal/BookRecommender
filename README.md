@@ -22,12 +22,14 @@ For this project will be working with the data [GoodBooks-10K](https://github.co
 | Column     | Type    | Description    |
 |-------------------|-------------------|-------------------|
 | book_id   | int64  | Unique ID for each book  |
-| authors	   | object  | the name of all authors of the book |
-| original_publication_year   | float64  | the   |
-| title   | object | Example Value 4  |
-| work_ratings_count   | int64  | Example Value 4  |
-| average_rating   | float64  | Example Value 4  |
-
+| goodreads_book_id	   | object  | Unique ID for the most popular edition of each book from the Goodreads Website |
+| work_id	   | object  | Unique ID for the aggereagtion of all edition of each book from the Goodreads Website |
+| authors	   | object  | The name of all the authors |
+| original_publication_year   | float64  | The year the original boook was publish   |
+| title   | object | The title of the book  |
+| work_ratings_count   | int64  | The number of users rating |
+| average_rating   | float64  | The average rating  |
+| language_code  | object | Abbreviated language tag  |
 
 
 #### ratings.csv: Contains 5.97 million user ratings for the books.
@@ -39,7 +41,7 @@ For this project will be working with the data [GoodBooks-10K](https://github.co
 | rating   | int64  | Rating from 1 to 5  |
 
 
-#### book_tags.csv: Provides information on how often users have applied specific tags to books.
+#### book_tags.csv: the tags Assigned by users to books and their counts
 
 | Column     | Type    | Description    |
 |-------------------|-------------------|-------------------|
@@ -47,7 +49,7 @@ For this project will be working with the data [GoodBooks-10K](https://github.co
 | tag_id  | int64 | Unique ID for each tag  |
 | count   | int64  | The number of users that have assigned the tag  |
 
-#### tags.csv: Includes various user-generated tags that can be associated with books.
+#### tags.csv: All user-generated tags id and their names
 
 | Column     | Type    | Description    |
 |-------------------|-------------------|-------------------|
