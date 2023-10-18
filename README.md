@@ -21,10 +21,12 @@ For this project will be working with the data [GoodBooks-10K](https://github.co
 
 | Column     | Type    | Description    |
 |-------------------|-------------------|-------------------|
-| Example Value 1   | Example Value 1  | Example Value 1  |
-| Example Value 2   | Example Value 2  | Example Value 2  |
-| Example Value 3   | Example Value 3  | Example Value 3  |
-| Example Value 4   | Example Value 4  | Example Value 4  |
+| book_id   | int64  | Unique ID for each book  |
+| authors	   | object  | the name of all authors of the book |
+| original_publication_year   | float64  | the   |
+| title   | object | Example Value 4  |
+| work_ratings_count   | int64  | Example Value 4  |
+| average_rating   | float64  | Example Value 4  |
 
 
 
