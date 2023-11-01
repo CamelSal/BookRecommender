@@ -10,7 +10,7 @@ This repository contains the code and documentation for a book recommender syste
 In today's world, with an ever-increasing number of books being published, discovering books that genuinely align with one's interests has become challenging. The abundance of available books and vague categorizations often makes finding an enjoyable read a truly frustrating experience.
 
 ### Those Affected:
-As an avid reader, I've personally grappled with this issue. Readers, both casual and dedicated, encounter this problem. The moment you finish a book you enjoyed, you're left searching for something similar, often with no clear starting point.
+As an avid reader, I've personally grappled with this issue. Readers, both casual and dedicated, encounter this problem. The moment you finish a book you enjoyed, you're left searching for something similar, often with no clear starting point, leaving readers in a state of ambiguity. This is an issue that resonates with anyone who's ever embarked on the quest for their next great read.
 
 
 ### Business Values:
