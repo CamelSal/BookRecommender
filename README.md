@@ -5,13 +5,23 @@ This repository contains the code and documentation for a book recommender syste
 
 ## Overview
 
-In today's world, with an ever-increasing number of books being published, discovering books that genuinely align with one's interests has become challenging. As an avid reader, I've personally grappled with this issue. The abundance of available books and vague categorizations often makes finding an enjoyable read a truly frustrating experience.
+### Problem Statement:
 
-Therefore, this project aims to address this issue by creating an intelligent book recommendation system. Its primary goal is to seamlessly connect readers with books they are highly likely to relish, easing the burden of sifting through the overwhelming sea of available options.
+In today's world, with an ever-increasing number of books being published, discovering books that genuinely align with one's interests has become challenging. The abundance of available books and vague categorizations often makes finding an enjoyable read a truly frustrating experience.
+
+### Those Affected:
+As an avid reader, I've personally grappled with this issue. Readers, both casual and dedicated, encounter this problem. The moment you finish a book you enjoyed, you're left searching for something similar, often with no clear starting point.
+
+
+### Business Values:
 
 A reliable book recommender has the potential to increase readers' consumption rate significantly. It can be a game-changer, reducing the time spent hunting for new books and ensuring they discover more engaging and enjoyable reads. Moreover, it's not just readers who stand to benefit from this innovation. Businesses have a vested interest in this as well, as it can enhance the shopping frequency of their customers, ultimately leading to higher sales and fostering customer loyalty.
 
-To achieve this, the project leverages the power of machine learning. The book recommender system will employ a variety of approaches, including content-based, collaborative filtering, or hybrid methods. This includes exploring algorithms like K-Nearest Neighbors (K-NN) and Singular Value Decomposition, which will be instrumental in identifying similar users and predicting user ratings for book recommendations.
+### Proposed Data Science Solution:
+
+This project addresses the issue by developing an intelligent book recommendation system. The primary aim is to seamlessly connect readers with books that align with their tastes, simplifying the process of finding enjoyable reads amidst the vast sea of available options.
+
+To achieve this, the project harnesses the power of machine learning. The book recommender system will employ various techniques, including both content-based and collaborative filtering, resulting in a hybrid recommender. The implementation will involve exploring algorithms such as K-Nearest Neighbors (K-NN) and Singular Value Decomposition (SVD). These algorithms are instrumental in identifying similar users and making predictions about user ratings for book recommendations. This combination ensures a robust and effective recommendation system for book enthusiasts.
 
 ## Dataset
 
