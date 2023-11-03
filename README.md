@@ -71,23 +71,18 @@ For this project will be working with the data [GoodBooks-10K](https://github.co
 ## Project Workflow
 
 ### Data Collection and Preprocessing
-1. **Gather Data**: Collect data from various sources.
-2. **Clean Data**: Address missing values, duplicates, and data quality issues.
+1. **Gather Data**: Collect data from GoodBooks-10K. 
+2. **Clean Data**: Address missing values and  duplicates.  
 
 ### Exploratory Data Analysis
 3. **Data Visualization**: Create visualizations to explore the dataset.
 4. **Identify Data Patterns**: Discover insights and trends in the data.
 
-### Feature Engineering
-5. **Create New Features**: Develop new features for recommendation models.
-6. **Encode Categorical Data**: Convert categorical data into numerical format.
 
-### Model Building
-7. **Content-Based Filtering**: Develop content-based recommendation models.
-8. **Collaborative Filtering**: Implement collaborative filtering methods.
-9. **Hybrid Recommender**: Combine content-based and collaborative filtering approaches.
+###  Collaborative Filtering Model Building
 
-### Evaluation and Validation
-10. **Define Evaluation Metrics**: Choose appropriate metrics for model evaluation.
-11. **Validate Models**: Assess the performance of recommendation models.
+###  Content-Based Filtering Model Building
 
+### Hybrid Filtering Model Combining
+
+### Future Steps
