@@ -21,7 +21,7 @@ A reliable book recommender has the potential to increase readers' consumption r
 
 This project addresses the issue by developing an intelligent book recommendation system. The primary aim is to seamlessly connect readers with books that align with their tastes, simplifying the process of finding enjoyable reads amidst the vast sea of available options.
 
-To achieve this, the project harnesses the power of machine learning. The book recommender system will employ various techniques, including both content-based and collaborative filtering, resulting in a hybrid recommender. The implementation will involve exploring algorithms such as K-Nearest Neighbors (K-NN) and Singular Value Decomposition (SVD). These algorithms are instrumental in identifying similar users and making predictions about user ratings for book recommendations. This combination ensures a robust and effective recommendation system for book enthusiasts.
+To achieve this, the project harnesses the power of machine learning. The book recommender system will employ various techniques, including both content-based and collaborative filtering, resulting in a hybrid recommender. The implementation will involve exploring algorithms such as Singular Value Decomposition (SVD) and Cosine Similarity. These algorithms are instrumental in identifying similar users and making predictions about user ratings for book recommendations. This combination ensures a robust and effective recommendation system for book enthusiasts.
 
 ## Dataset
 
@@ -80,6 +80,10 @@ For this project will be working with the data [GoodBooks-10K](https://github.co
 
 
 ###  Collaborative Filtering Model Building
+
+5. **Funk SVD**: Hypertune the parameters of n_factors = *20* eppoc = *20* and learning rate = *0.0075* for the Funk SVD model 
+6. **Similarities** build a matrix of similarities of each book using the lantetn features from the funk svd model
+
 
 ###  Content-Based Filtering Model Building
 
