@@ -85,8 +85,7 @@ For this project will be working with the data [GoodBooks-10K](https://github.co
 6. **Similarities** build a matrix of similarities of each book using the lantetn features from the funk svd model
 
 
-###  Content-Based Filtering Model Building
-
-### Hybrid Filtering Model Combining
-
 ### Future Steps
+- Content-Based Filtering Model Building
+- Hybrid Filtering Model Combining
+
