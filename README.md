@@ -89,3 +89,6 @@ For this project will be working with the data [GoodBooks-10K](https://github.co
 - Content-Based Filtering Model Building
 - Hybrid Filtering Model Combining
 
+
+![alt text](https://github.com/CamelSal/BookRecommender/blob/main/image1.png?raw=true)
+
