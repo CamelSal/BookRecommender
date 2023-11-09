@@ -23,6 +23,8 @@ This project addresses the issue by developing an intelligent book recommendatio
 
 To achieve this, the project harnesses the power of machine learning. The book recommender system will employ various techniques, including both content-based and collaborative filtering, resulting in a hybrid recommender. The implementation will involve exploring algorithms such as Singular Value Decomposition (SVD) and Cosine Similarity. These algorithms are instrumental in identifying similar users and making predictions about user ratings for book recommendations. This combination ensures a robust and effective recommendation system for book enthusiasts.
 
+![alt text](https://github.com/CamelSal/BookRecommender/blob/main/image1.png?raw=true)
+
 ## Dataset
 
 For this project will be working with the data [GoodBooks-10K](https://github.com/zygmuntz/goodbooks-10k) which contains four indidual files that will be utilized to build the book recommender system.
@@ -88,8 +90,4 @@ For this project will be working with the data [GoodBooks-10K](https://github.co
 ### Future Steps
 - Content-Based Filtering Model Building
 - Hybrid Filtering Model Combining
-
-## Flowchart
-
-![alt text](https://github.com/CamelSal/BookRecommender/blob/main/image1.png?raw=true)
 
