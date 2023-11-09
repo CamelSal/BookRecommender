@@ -23,7 +23,7 @@ This project addresses the issue by developing an intelligent book recommendatio
 
 To achieve this, the project harnesses the power of machine learning. The book recommender system will employ various techniques, including both content-based and collaborative filtering, resulting in a hybrid recommender. The implementation will involve exploring algorithms such as Singular Value Decomposition (SVD) and Cosine Similarity. These algorithms are instrumental in identifying similar users and making predictions about user ratings for book recommendations. This combination ensures a robust and effective recommendation system for book enthusiasts.
 
-![alt text](https://github.com/CamelSal/BookRecommender/blob/main/image1.png?raw=true)
+![alt text](https://github.com/CamelSal/BookRecommender/blob/main/images/image1.png?raw=true)
 
 ## Dataset
 
@@ -74,17 +74,22 @@ For this project will be working with the data [GoodBooks-10K](https://github.co
 
 ### Data Collection and Preprocessing
 1. **Gather Data**: Collect data from GoodBooks-10K. 
-2. **Clean Data**: Address missing values and  duplicates.  
+
+2. **Clean Data**: Addressed missing values by filling in the gaps for the publication year and language code, and eliminated redundant columns such as ISBN and Original Title. In addition, six duplicated rows were removed from the Book Tags dataset.
 
 ### Exploratory Data Analysis
-3. **Data Visualization**: Create visualizations to explore the dataset.
-4. **Identify Data Patterns**: Discover insights and trends in the data.
+3. **Data Visualization**: Create visualizations to explore the dataset, examining the distribution of publication years, the distribution of the number of tags per book, and the distribution of the number of books rated by each user.
 
+4. **Identify Data Patterns**: 
+
+### Feature Enginering
+
+5. **Refine Data** Refine the book tag data by eliminating those that appeared in less than 10 books or were in over 66% of the books.
 
 ###  Collaborative Filtering Model Building
 
-5. **Funk SVD**: Hypertune the parameters of n_factors = *20* eppoc = *20* and learning rate = *0.0075* for the Funk SVD model 
-6. **Similarities** build a matrix of similarities of each book using the lantetn features from the funk svd model
+6. **Funk SVD**: Hypertune the parameters of n_factors = *20* eppoc = *20* and learning rate = *0.0075* for the Funk SVD model 
+7. **CosineSimilarities** build a matrix of similarities of each book using the lantetn features from the funk svd model
 
 
 ### Future Steps
