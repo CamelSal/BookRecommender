@@ -75,28 +75,36 @@ For this project will be working with the data [GoodBooks-10K](https://github.co
 ### Data Collection and Preprocessing
 1. **Gather Data**: Collect data from GoodBooks-10K. 
 
-2. **Clean Data**: Addressed missing values by filling in the gaps for the publication year and language code, and eliminated redundant columns such as ISBN and Original Title. In addition, six duplicated rows were removed from the Book Tags dataset.
+2. **Clean Data**: Addressed missing values by filling in the gaps for the publication year and language code and eliminated redundant columns such as ISBN and Original Title. In addition, six duplicated rows were removed from the Book Tags dataset.
+
 
 ### Exploratory Data Analysis
+
 3. **Data Visualization**: Create visualizations to explore the dataset, examining the distribution of publication years, the distribution of the number of tags per book, and the distribution of the number of books rated by each user.
 
 ![alt text](https://github.com/CamelSal/BookRecommender/blob/main/images/ratings_dis.png?raw=true)
 
-4. **Identify Data Patterns**: Identified that the ratings exhibited a good amount of spread between users and books, making them ready for modeling. In contrast, the tags required some feature engineering, as over half of the tags were present in only one book.
+4. **Identify Data Patterns**: Identified that the ratings exhibited a good amount of spread between users and books, making them ready for modelling. In contrast, the tags required some feature engineering, as over half of the tags were present in only one book.
 
 ![alt text](https://github.com/CamelSal/BookRecommender/blob/main/images/books_dis.png?raw=true)
 
-### Feature Enginering
+### Feature Engineering
 
-
-5. **Refine Data** Refine the book tag data by eliminating those that appeared in less than 10 books or were in over 66% of the books.
+5. **Refine Data** Refine the book tag data by eliminating tags that appeared in fewer than 10 books or were present in more than 66% of the books, resulting in approximately 5,000 tags. Most books now have around 60-80 tags each
 
 ![alt text](https://github.com/CamelSal/BookRecommender/blob/main/images/num_tags.png?raw=true)
 
 ###  Collaborative Filtering Model Building
 
-6. **Funk SVD**: Hypertune the parameters of n_factors = *20* eppoc = *20* and learning rate = *0.0075* for the Funk SVD model 
-7. **CosineSimilarities** build a matrix of similarities of each book using the lantetn features from the funk svd model
+6. **Baseline Model**: The Funk Singular Value Decomposition (SVD) model for collaborative filtering was implemented. Using the ratings dataset, a sample of 200k ratings was taken, and RMSE, MAE, and FCP metrics were used to evaluate its performance.
+
+7. **Tune Hyperparameters** Using the small sampled data, the hyperparameters, including n_factors, epochs, and learning rate, were tuned. This was accomplished using a five-fold cross-validation approach to evaluate the performance of different parameter combinations.
+
+8. **Integrate Large Dataset** Incorporated the larger dataset, representing 80% of the original data, to further fine-tune the hyperparameters, particularly focusing on optimizing 'n_factors' for the Funk SVD model.
+
+9. **Latent Book Factors** Ran the Funk SVD model with the hyper-tuned parameters (best parameters: n_factors 20, epochs 20, and learning rate 0.0075) and extracted the latent factors of the books to perform a cosine similarity comparison for each book.
+
+10. **First Recommender** Made a function to generate the initial book recommendations by utilizing the latent factors to identify the top 10 similar books for a given book.
 
 
 ### Future Steps
