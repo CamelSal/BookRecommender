@@ -68,7 +68,7 @@ For this project will be working with the data [GoodBooks-10K](https://github.co
 
 
 
-## Project Workflow
+## Project Organization
 
 ### Data Collection and Preprocessing
 1. **Gather Data**: Collect data from GoodBooks-10K. 
@@ -89,6 +89,7 @@ For this project will be working with the data [GoodBooks-10K](https://github.co
 - Content-Based Filtering Model Building
 - Hybrid Filtering Model Combining
 
+## Flowchart
 
 ![alt text](https://github.com/CamelSal/BookRecommender/blob/main/image1.png?raw=true)
 
