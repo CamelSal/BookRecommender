@@ -80,11 +80,18 @@ For this project will be working with the data [GoodBooks-10K](https://github.co
 ### Exploratory Data Analysis
 3. **Data Visualization**: Create visualizations to explore the dataset, examining the distribution of publication years, the distribution of the number of tags per book, and the distribution of the number of books rated by each user.
 
-4. **Identify Data Patterns**: 
+![alt text](https://github.com/CamelSal/BookRecommender/blob/main/images/ratings_dis.png?raw=true)
+
+4. **Identify Data Patterns**: Identified that the ratings exhibited a good amount of spread between users and books, making them ready for modeling. In contrast, the tags required some feature engineering, as over half of the tags were present in only one book.
+
+![alt text](https://github.com/CamelSal/BookRecommender/blob/main/images/books_dis.png?raw=true)
 
 ### Feature Enginering
 
+
 5. **Refine Data** Refine the book tag data by eliminating those that appeared in less than 10 books or were in over 66% of the books.
+
+![alt text](https://github.com/CamelSal/BookRecommender/blob/main/images/num_tags.png?raw=true)
 
 ###  Collaborative Filtering Model Building
 
