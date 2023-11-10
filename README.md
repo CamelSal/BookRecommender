@@ -102,7 +102,7 @@ For this project will be working with the data [GoodBooks-10K](https://github.co
 
 8. **Integrate Large Dataset** Incorporated the larger dataset, representing 80% of the original data, to further fine-tune the hyperparameters, particularly focusing on optimizing 'n_factors' for the Funk SVD model.
 
-9. **Latent Book Factors** Ran the Funk SVD model with the hyper-tuned parameters (best parameters: n_factors 20, epochs 20, and learning rate 0.0075) and extracted the latent factors of the books to perform a cosine similarity comparison for each book.
+9. **Latent Book Factors** Ran the Funk SVD model with the hyper-tuned parameters (best parameters: n_factors 20, epochs 20, learning rate 0.0075 and biased False) and extracted the latent factors of the books to perform a cosine similarity comparison for each book.
 
 10. **First Recommender** Made a function to generate the initial book recommendations by utilizing the latent factors to identify the top 10 similar books for a given book.
 
