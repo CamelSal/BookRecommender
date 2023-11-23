@@ -94,20 +94,40 @@ For this project will be working with the data [GoodBooks-10K](https://github.co
 
 ![alt text](https://github.com/CamelSal/BookRecommender/blob/main/images/num_tags.png?raw=true)
 
+6. **Trasformed Tag Count**  I transformed the count of each tag for each specific book by dividing it by the maximum count each book received, normalizing the data for all books to facilitate easy comparison.
+
 ###  Collaborative Filtering Model Building
 
-6. **Baseline Model**: The Funk Singular Value Decomposition (SVD) model for collaborative filtering was implemented. Using the ratings dataset, a sample of 200k ratings was taken, and RMSE, MAE, and FCP metrics were used to evaluate its performance.
+7. **Baseline Model**: The Funk Singular Value Decomposition (SVD) model for collaborative filtering was implemented. Using the ratings dataset, a sample of 200k ratings was taken, and RMSE, MAE, and FCP metrics were used to evaluate its performance.
 
-7. **Tune Hyperparameters** Using the small sampled data, the hyperparameters, including n_factors, epochs, and learning rate, were tuned. This was accomplished using a five-fold cross-validation approach to evaluate the performance of different parameter combinations.
+8. **Tune Hyperparameters** Using the small sampled data, the hyperparameters, including n_factors, epochs, and learning rate, were tuned. This was accomplished using a five-fold cross-validation approach to evaluate the performance of different parameter combinations.
 
-8. **Integrate Large Dataset** Incorporated the larger dataset, representing 80% of the original data, to further fine-tune the hyperparameters, particularly focusing on optimizing 'n_factors' for the Funk SVD model.
+9. **Integrate Large Dataset** Incorporated the larger dataset, representing 80% of the original data, to further fine-tune the hyperparameters, particularly focusing on optimizing 'n_factors' for the Funk SVD model.
 
-9. **Latent Book Factors** Ran the Funk SVD model with the hyper-tuned parameters (best parameters: n_factors 20, epochs 20, learning rate 0.0075 and biased False) and extracted the latent factors of the books to perform a cosine similarity comparison for each book.
+10. **Latent Book Factors** Ran the Funk SVD model with the hyper-tuned parameters (best parameters: n_factors 20, epochs 20, learning rate 0.0075 and biased False) and extracted the latent factors of the books to perform a cosine similarity comparison for each book.
 
-10. **First Recommender** Made a function to generate the initial book recommendations by utilizing the latent factors to identify the top 10 similar books for a given book.
+11. **First Recommender** Made a function to generate the initial book recommendations by utilizing the latent factors to identify the top 10 similar books for a given book.
+
+### Content-Based Filtering Model Building
+
+12. **Token Genres** Utilized CountVectorizer with a custom token to extract the individual genres included in each book and employed cosine similarity to compare them. 
+
+13. **First Content Recomendations** Generated the initial content recommendations, although for many books, there were multiple entries with perfect similarity scores.
+
+14. **Scaled Data** Employed StandardScaler to scale the tag data and conducted cosine similarity comparisons for each book, enhancing the precision of content-based recommendations.
+
+15. **Second Content Recomendations** Generated the second set of content recommendations using tags, offering more diverse results. Similarity scores among the top recommendations appear to be more varied compared to other recommenders.
+
+### Hybrid Filtering Model Combining
+
+16. **Combine Results** Combined the scores of all three recommendation systems to produce the combined results of the top 10 recommendations.
+
+17. **Tune Weight** Tuned the weight of each recommender and added the average rating to the mix, allowing for optimal results.
+
+18. **Author Filter** Created the option to remove books by the same author from recommendations.
 
 
-### Future Steps
-- Content-Based Filtering Model Building
-- Hybrid Filtering Model Combining
+### Steamlit Demo
+19. **Interactive Showcase** Developed an interactive and user-friendly demo of the book recommender system, allowing users to explore and experience the recommendations firsthand.
 
+## Conclusion 
