@@ -130,4 +130,6 @@ For this project will be working with the data [GoodBooks-10K](https://github.co
 ### Steamlit Demo
 19. **Interactive Showcase** Developed an interactive and user-friendly demo of the book recommender system, allowing users to explore and experience the recommendations firsthand.
 
+## Findings
+
 ## Conclusion 
