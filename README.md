@@ -42,18 +42,28 @@ For this project will be working with the data [GoodBooks-10K](https://github.co
 
 #### books.csv: A dataset with 10,000 unique books from Goodreads.
 
-| Column     | Type    | Description    |
-|-------------------|-------------------|-------------------|
-| book_id   | int64  | Unique ID for each book  |
-| goodreads_book_id	   | object  | Unique ID for the most popular edition of each book from the Goodreads Website |
-| work_id	   | object  | Unique ID for the aggereagtion of all edition of each book from the Goodreads Website |
-| authors	   | object  | The name of all the authors |
-| original_publication_year   | float64  | The year the original boook was publish   |
-| title   | object | The title of the book  |
-| work_ratings_count   | int64  | The number of users rating |
-| average_rating   | float64  | The average rating  |
-| language_code  | object | Abbreviated language tag  |
-
+| Column                     | Type    | Description                                            |
+|-----------------------------|---------|--------------------------------------------------------|
+| book_id                    | int64  | Unique ID for each book                                |
+| goodreads_book_id          | int64  | Unique ID for the most popular edition of each book from the Goodreads website |
+| best_book_id               | int64  | Best book ID                                          |
+| work_id                    | int64  | Unique ID for the aggregation of all editions of each book from the Goodreads website |
+| books_count                | int64  | Number of editions for each book                       |
+| authors                    | object  | The names of all the authors                            |
+| original_publication_year  | float64  | The year the original book was published                |
+| title                      | object  | The title of the book                                   |
+| average_rating             | float64  | The average rating across all editions of the book      |
+| ratings_count              | int64  | The total number of ratings for all editions of the book |
+| work_ratings_count         | int64  | The total number of user ratings for all editions of the book |
+| work_text_reviews_count    | int64  | The total number of text reviews for all editions of the book |
+| ratings_1                  | int64  | The number of 1-star ratings for all editions of the book |
+| ratings_2                  | int64  | The number of 2-star ratings for all editions of the book |
+| ratings_3                  | int64  | The number of 3-star ratings for all editions of the book |
+| ratings_4                  | int64  | The number of 4-star ratings for all editions of the book |
+| ratings_5                  | int64  | The number of 5-star ratings for all editions of the book |
+| image_url                  | object  | URL of the book's cover image                          |
+| language_code              | object  | Abbreviated language tag                                |
+| genres                     | object  | Genres associated with the book  
 
 #### ratings.csv: Contains 5.97 million user ratings for the books.
 
