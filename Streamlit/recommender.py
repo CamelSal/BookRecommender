@@ -74,9 +74,10 @@ if st.button('Recomend Me Some Books'):
     # Display top 10 recommended books with images
     for i in range(10):
         top_1 = rec_id.loc[i].values[0] 
+        top_gid = book_df[book_df['book_id'] == top_1]['goodreads_book_id'].values[0]
         top_title = book_df[book_df['book_id'] == top_1]['title'].values[0]
 
-        st.markdown(f'{i+1}. {top_title}')
+        st.markdown(f'{i+1}. [{top_title}](https://www.goodreads.com/book/show/{top_gid})')
         st.markdown(f"![Alt Text]({sh_image(top_title)})")
     
     # Display full information of recommended books in a DataFrame
