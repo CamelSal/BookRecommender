@@ -43,20 +43,29 @@ def sh_image(titl):
 
 
 # Page Title
-st.title('Hybrid Book Recommender 10k')
+st.title(r"$\textsf{\huge GoodRecs 10K}$")
+st.title('**Hybrid Based Book Recommendation System**')
 # Header
-st.header('Welcome to My Book Recommender')
+#st.header('Welcome to My Book Recommender Made By Camilo Salazar')
 # Text
-st.write('This is a simple Streamlit app that can recommend you the top 10' +
-'recommendations based on books similar to the one inputed')
+st.write('This Streamlit app provides a user-friendly interface for generating \
+          book recommendations. By choosing a book title from a curated list of \
+          **10,000** titles, the app employs a sophisticated recommendation system to \
+          present a carefully selected list of titles and book covers for the top \
+          10 books that share similarities with the chosen book.\
+          \n\nThe recommendations are generated using a hybrid approach \
+         that combines collaborative filtering and content-based filtering. \
+         This ensures a well-rounded selection based on both user ratings and \
+         book content. Enjoy a seamless and personalized book discovery experience \
+         with this interactive showcase.')
 
 # Sidebar Input with all titles available in dataframe 
 options = book_df['title'].values
-selected_title = st.selectbox('Select Book Title', options)
+selected_title = st.selectbox('**Select Book Title**', options)
 
 
 # Display Book Image
-st.markdown(f"![Alt Text]({sh_image(selected_title)})")
+st.image(sh_image(selected_title))
 
 # Checkbox to exclude works by the same author
 sm_auth = st.checkbox('Exclude Works by the Same Author')
@@ -78,7 +87,7 @@ if st.button('Recomend Me Some Books'):
         top_title = book_df[book_df['book_id'] == top_1]['title'].values[0]
 
         st.markdown(f'{i+1}. [{top_title}](https://www.goodreads.com/book/show/{top_gid})')
-        st.markdown(f"![Alt Text]({sh_image(top_title)})")
+        st.image(sh_image(top_title))
     
     # Display full information of recommended books in a DataFrame
     st.markdown(' ')
